@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <main class="bg-red-500 h-screen" >
+     <form  class="flex justify-center pt-10 px-6 gap-3"  id="form">
+        <h1 class="text-white text-lg font-semibold md:text-3xl ">PokeDex</h1>
+        <div class="flex justify-center pt-10">
+            <input 
+             id="input-pokemon" type="text" 
+            placeholder="busca tu pokemon por nombre" 
+            class="p-2 rounded outline-none border border-red-500 flex-1 " required>
+            <button class="p-2 bg-yellow-500 font-semibold rounded text-base" > Buscar</button>
+    </div>
+</form>
+    <section class="bg-white py-3 mt-5 rounded flex justify-around">
+        <div class="text-center">
+          <img
+          id="pokemon-img"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+            alt=""
+            width="200"
+          />
+          <h3 id="pokemon-name" class="text-lg font-semibold">Pikachu</h3>
+        </div>
+        <div>
+          <h4 class="font-bold">Habilidades</h4>
+          <ul  id="pokemon-abilities" class="mt-2">
+            
+            <li class="flex gap-2 items-center">
+              <img
+                src="asets/hola.svg"
+                width="20"
+                alt=""
+              /> static
+            </li>
+            <li class="flex gap-2 items-center">
+              <img src="asets/hola.svg" width="20" alt="">lightning-rod
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="mt-5 bg-white rounded ">
+        <div class="w-full">
+          <canvas id="stats">    </canvas>
+
+        </div>
+
+      </section>
+    </main>
+   
+    <script src="http://cdn.tailwindcss.com/"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="logica.js"></script>
+</body>
+</html>
